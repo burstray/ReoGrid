@@ -1,0 +1,197 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>unvell.ReoGrid</RootNamespace>
+    <AssemblyName>unvell.ReoGrid</AssemblyName>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <StartupObject></StartupObject>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>TRACE;DEBUG;WPF;EX_SCRIPT;VP_DEBUG_OFF;ALWAYS_CELL_CLIP;FORMULA;LANG_JP;OUTLINE;DRAWING;COMMENT;PRINT;RICHTEXT;</DefineConstants>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE;WPF;FORMULA;LANG_JP;OUTLINE;DRAWING;PRINT;RICHTEXT;</DefineConstants>
+    <DocumentationFile>bin\Release\unvell.ReoGrid.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Minimum|AnyCPU' ">
+    <OutputPath>bin\Minimum\</OutputPath>
+    <DefineConstants>TRACE;WINFORM;LANG_JP</DefineConstants>
+    <Optimize>true</Optimize>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <DocumentationFile>bin\Minimum\unvell.ReoGrid.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WPFDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WPFDebug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WPF;EX_SCRIPT;VP_DEBUG_OFF;GRID_GUIDELINE_OFF;FORMULA;LANG_JP;PRO;OUTLINE;DRAWING;RICHTEXT,PRINT</DefineConstants>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WPFRelease|AnyCPU'">
+    <OutputPath>bin\WPFRelease\</OutputPath>
+    <DefineConstants>TRACE;WPF;FORMULA;LANG_JP;OUTLINE;DRAWING;PRINT</DefineConstants>
+    <DocumentationFile>bin\WPFRelease\unvell.ReoGrid.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WPFMinimum|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WPFMinimum\</OutputPath>
+    <DefineConstants>TRACE;WPF;LANG_JP</DefineConstants>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\WPFMinimum\unvell.ReoGrid.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Extension|AnyCPU' ">
+    <OutputPath>bin\Extension\</OutputPath>
+    <DefineConstants>TRACE;EX;WINFORM;FORMULA;EX_SCRIPT;LANG_JP;OUTLINE;DRAWING;PRINT;RICHTEXT;</DefineConstants>
+    <DocumentationFile>bin\Extension\unvell.ReoGrid.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'WPFExtension|AnyCPU' ">
+    <OutputPath>bin\WPFExtension\</OutputPath>
+    <DefineConstants>TRACE;EX;WPF;FORMULA;EX_SCRIPT;LANG_JP;OUTLINE;DRAWING;PRINT</DefineConstants>
+    <DocumentationFile>bin\WPFExtension\unvell.ReoGrid.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugAndroid|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugAndroid\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VP_DEBUG_OFF;ALWAYS_CELL_CLIP;FORMULA;LANG_JP;PRO;OUTLINE;DRAWING;ANDROID</DefineConstants>
+    <LangVersion>default</LangVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugiOS|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugiOS\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ALWAYS_CELL_CLIP;FORMULA;LANG_JP;iOS;</DefineConstants>
+    <LangVersion>default</LangVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Android\**" />
+    <Compile Remove="iOS\**" />
+    <Compile Remove="Test\**" />
+    <Compile Remove="WinForm\**" />
+    <Content Remove="Android\**" />
+    <Content Remove="iOS\**" />
+    <Content Remove="Test\**" />
+    <Content Remove="WinForm\**" />
+    <EmbeddedResource Remove="Android\**" />
+    <EmbeddedResource Remove="iOS\**" />
+    <EmbeddedResource Remove="Test\**" />
+    <EmbeddedResource Remove="WinForm\**" />
+    <None Remove="Android\**" />
+    <None Remove="iOS\**" />
+    <None Remove="Test\**" />
+    <None Remove="WinForm\**" />
+    <Page Remove="Android\**" />
+    <Page Remove="iOS\**" />
+    <Page Remove="Test\**" />
+    <Page Remove="WinForm\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime" Condition=" '$(Configuration)|$(Platform)' == 'Extension|AnyCPU' ">
+      <HintPath>..\Ref\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime" Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+      <HintPath>..\Ref\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime" Condition=" '$(Configuration)|$(Platform)' == 'WPFExtension|AnyCPU' ">
+      <HintPath>..\Ref\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android" Condition=" '$(Configuration)|$(Platform)' == 'DebugAndroid|AnyCPU' ">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v4.0.3\Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Update="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Update="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="unvell.ReoScript" Condition=" '$(Configuration)|$(Platform)' == 'Extension|AnyCPU' ">
+      <HintPath>..\Ref\unvell.ReoScript.dll</HintPath>
+    </Reference>
+    <Reference Include="unvell.ReoScript" Condition=" '$(Configuration)|$(Platform)' == 'WPFExtension|AnyCPU' ">
+      <HintPath>..\Ref\unvell.ReoScript.dll</HintPath>
+    </Reference>
+    <Reference Include="unvell.ReoScript">
+      <HintPath>..\Ref\unvell.ReoScript.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.iOS" Condition=" '$(Configuration)|$(Platform)' == 'DebugiOS|AnyCPU' ">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Control\ControlShare.cs" />
+    <Compile Update="ClipboardMonitor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cross.cur" />
+    <Content Include="Resources\full_col_select.cur" />
+    <Content Include="Resources\full_row_select.cur" />
+    <Content Include="Resources\grid_select.cur" />
+    <Content Include="Resources\pick_range.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetZip" Version="1.15.0" />
+  </ItemGroup>
+</Project>
