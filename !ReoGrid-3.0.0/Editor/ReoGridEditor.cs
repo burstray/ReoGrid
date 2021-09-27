@@ -1644,9 +1644,9 @@ namespace unvell.ReoGrid.Editor
 
 				this.SetCurrentDocumentFile(path);
 
-#if DEBUG
-				RGUtility.OpenFileOrLink(path);
-#endif
+//#if DEBUG
+//				RGUtility.OpenFileOrLink(path);
+//#endif
 			}
 			catch (Exception ex)
 			{
